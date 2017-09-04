@@ -6,8 +6,8 @@ public class Dice {
 		
 		random1 = (int)(Math.random()*6.0) + 1;
 		random2 = (int)(Math.random()*6.0) + 1;
-		System.out.println("The first dice rolled " + random1);
-		System.out.println("The first dice rolled " + random2);
+		System.out.println("The first die rolled " + random1);
+		System.out.println("The second die rolled " + random2);
 		
 		System.out.println("The total is " + (random1 + random2));
 	}
