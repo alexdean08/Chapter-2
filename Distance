@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Distance {
+	public static void main (String [] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int x1, x2, y1, y2;
+		double distance;
+		
+		System.out.println("What is the x of point one?");
+		x1 = scan.nextInt();
+		System.out.println("What is the y of point one?");
+		y1 = scan.nextInt();
+
+		System.out.println("What is the x of point two?");
+		x2 = scan.nextInt();
+		System.out.println("What is the y of point two?");
+		y2 = scan.nextInt();
+		
+		System.out.println("");
+		System.out.println("(" + x1 + "," + y1 + ")");
+		System.out.println("(" + x2 + "," + y2 + ")");
+		distance = Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+		System.out.println("The distance is: " + distance);
+	}
+}
