@@ -1,0 +1,51 @@
+import java.util.Scanner;
+/****************************
+ * 
+ * This is the driver program to create circle objects from the 
+ * circle class
+ * @author Alex Dean
+ * @version August 29, 2017
+ */
+public class CircleTest
+{
+    public static void main(String[] args)
+    {
+        // Start Scanner Object
+        Scanner scan = new Scanner(System.in);
+
+        /*Prompt use for radius and the create first
+         * circle object.  Calculate area and print.
+         */
+        System.out.print("\fEnter the radius: ");
+        double r = scan.nextDouble();
+        Circle circle = new Circle(r);
+        double area = circle.getArea();
+        double circum1 = circle.getCircumference();
+        System.out.println("Circle 1: radius = " + r + " \nft area = " 
+            + area + " ft^2 \ncircumference = " + circum1 + "ft");
+            
+        /*Prompt use for radius and the create second
+         * circle object.  Calculate area and print.
+         */
+        System.out.println(" ");
+        System.out.print("Enter another radius: ");
+        double r2 = scan.nextDouble();
+        Circle c2 = new Circle(r2);
+        area = c2.getArea();
+        circum1 = c2.getCircumference();
+        System.out.println("Circle 2: radius = " + r2 + "\nft area = "
+            + area + " ft^2 \ncircumference = " + circum1 + "ft");
+            
+        /*Prompt use for radius and the create third
+         * circle object.  Calculate area and print.
+         */
+        System.out.println(" ");
+        System.out.print("Enter another radius: ");
+        double r3 = scan.nextDouble();
+        Circle c3 = new Circle(r3);
+        area = c3.getArea();
+        circum1 = c3.getCircumference();
+        System.out.println("Circle 2: radius = " + r3 + "\nft area = "
+            + area + " ft^2 \ncircumference = " + circum1 + "ft");
+    }
+}
