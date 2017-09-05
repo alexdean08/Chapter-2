@@ -15,30 +15,33 @@ public class Face extends Applet {
 		int G = 228;
 		int B = 170;
 		
-		final int MIDX = 600;
-		final int MIDY = 700;
+		final int MIDX = 250;
+		final int MIDY = 300;
 		
 		Color skin = new Color(R, G, B);
 		page.setColor(skin);
 		
 		//head
-		page.fillOval(200, 200, 800, 1000);
+		page.fillOval(50, 50, 400, 500);
 		
 		//eyes
 		page.setColor(Color.white);
-		page.fillOval(MIDX - 300, 500, 200, 200);
-		page.fillOval(MIDX + 100, 500, 200, 200);
+		page.fillOval(MIDX - 150, MIDY - 100, 100, 100);
+		page.fillOval(MIDX + 50, MIDY - 100, 100, 100);
+		
 		page.setColor(Color.green);
-		page.fillOval(MIDX - 250, 550, 100, 100);
-		page.fillOval(MIDX + 150, 550, 100, 100);
+		page.fillOval(MIDX - 130, MIDY - 80, 60, 60);
+		page.fillOval(MIDX + 70, MIDY - 80, 60, 60);
+		
 		page.setColor(Color.black);
-		page.fillOval(MIDX - 230, 570, 60, 60);
-		page.fillOval(MIDX + 170, 570, 60, 60);
+		page.fillOval(MIDX - 120, MIDY - 70, 40, 40);
+		page.fillOval(MIDX + 80, MIDY - 70, 40, 40);
 		
 		//nose and mouth 
-		page.drawLine(MIDX, MIDY - 100, MIDX - 100, MIDY + 100);
-		page.drawLine(MIDX, MIDY + 100, MIDX - 100, MIDY + 100);
-		page.drawArc(MIDX - 300, MIDY, 600, 300, 190, 160);
+		page.drawLine(MIDX, MIDY - 60, MIDX - 60, MIDY + 60);
+		page.drawLine(MIDX, MIDY + 60, MIDX - 60, MIDY + 60);
+		page.drawArc(MIDX - 150, MIDY + 50, 300, 100, 190, 160);
+		
 		
 		R = 81;
 		G = 67;
@@ -48,12 +51,13 @@ public class Face extends Applet {
 		page.setColor(hair);
 		
 		//eyebrows
-		page.fillArc(MIDX - 300, 500, 200, 40, -150, -160);
-		page.fillArc(MIDX + 100, 500, 200, 40, -150, -160);
+		page.fillArc(MIDX - 150, MIDY - 100, 100, 40, -150, -160);
+		page.fillArc(MIDX + 50, MIDY - 100, 100, 40, -150, -160);
 		
 		//hair
-		page.fillArc(MIDX - 350, 150, 750, 250, -150, -260);
-		page.fillOval(MIDX - 380, 230, 150, 300);
-		page.fillOval(MIDX + 250, 230, 150, 300);
+		page.fillArc(MIDX - 220, MIDY - 250, 440, 150, -150, -260);
+		page.fillOval(MIDX - 220, MIDY - 210, 70, 200);
+		page.fillOval(MIDX + 150, MIDY - 210, 70, 200);
+		
 	}
 }
