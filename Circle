@@ -1,0 +1,34 @@
+public class Circle
+{
+    // data section
+    private double radius;
+
+    // constructor
+    /**
+     * Constructor method to create object
+     * @param r the radius of a circle
+     */
+    public Circle(double r)
+    {
+        radius = r;
+    }
+
+    // method section
+    /***********************
+     * Function to calculate area of circle
+     * @return area of a circle
+     */
+    public double getArea()
+    {
+        return Math.PI * radius * radius;
+    }
+
+    /***********************
+     * Function to calculate circumference of a circle
+     * @return circumference of a circle
+     */
+    public double getCircumference()
+    {
+        return Math.PI * 2.0 * radius;
+    }
+}
