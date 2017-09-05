@@ -1,0 +1,51 @@
+/**
+ * This calculates how much paint is necessary to cover a room
+ * 
+ * @author Alex Dean
+ * @version August 31, 2017
+ * 
+ */
+
+import java.util.Scanner;
+public class Paint {
+
+    public static void main (String [] args){
+        final int COVERAGE = 350; //paint covers 350 sq ft/gal
+        
+        int length, width, height, doors, windows;
+        
+        double totalSqFt;
+       
+        double paintNeeded;
+        
+        Scanner scan = new Scanner(System.in);
+      
+        System.out.println("\fWhat is the length of the room");
+        length = scan.nextInt();
+       
+        System.out.println("What is the width of the room?");
+        width = scan.nextInt();
+     
+        System.out.println("What is the height of the room?");
+        height = scan.nextInt();
+        
+        System.out.println("How many doors are in the room?");
+        doors = scan.nextInt();
+        
+        System.out.println("How many windows are in the room?");
+        windows = scan.nextInt();
+       
+     
+        totalSqFt = (2.0*(height*width)) + (2.0*(length*height))-(20*doors)-(15*windows);
+  
+        paintNeeded = (totalSqFt/COVERAGE);
+    
+        System.out.println("Length: " + length);
+        System.out.println("Width: " + width);
+        System.out.println("Height: " + height);
+        System.out.println("Doors: " + doors);
+        System.out.println("Windows: " + windows);
+        System.out.println("Gallons: " + paintNeeded);
+    }
+    
+}
